@@ -8,11 +8,15 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "20.8.7",
+    "@types/react": "18.2.31",
+    "typescript": "5.2.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-    "build": "net build",
+    "build": "next build",
     "start": "next start"
   },
   "author": "dreamDeveloper",
