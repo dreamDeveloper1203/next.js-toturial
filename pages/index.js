@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Head from "next/head";
+import Router from "next/router";
 
 function HomePage(props) {
   return (
@@ -8,7 +8,11 @@ function HomePage(props) {
         <title>Welcome to next.js!</title>
       </Head>
       <div>Welcome to Next.js</div>
-      <Link href="/posts/first">First Post</Link>
+      <span
+        onClick={() => Router.push("/?counter=1", undefined, { shallow: true })}
+      >
+        Reload
+      </span>
       <br />
       <div>next stars: {props.stars}</div>
       <img src="/logo.png" alt="Next.js logo" />
